@@ -4,66 +4,65 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>.caption {
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 50px;
-      margin-bottom: 10px;
-      font-family: serif;
+	<style>
+    table {
+        background: #ffff66;
+        border: 3px solid black;    
+        font-family: "Georgia", serif;
+        font-size: 22px;
     }
 
-    .main-box {
-      width: fit-content;
-      background-color: yellow;
-      border: 3px solid black;
-      padding: 10px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      gap: 5px;
-      text-align: center;
-      font-family: serif;
+    caption {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 
-    .box {
-      border: 2px solid black;
-      padding: 10px 15px;
-      font-size: 16px;
-      background-color: yellow;
+    th, td {
+        border: 2px solid black;     
+        padding: 0;                  
     }
 
-    .header {
-      font-weight: bold;
-      font-size: 18px;
+    .inner-box {
+        border: 2px solid black;    
+        padding: 12px 20px; 
+        /*margin: 2px;*/
+        Space: 2px;
     }
-  </style>
+
+    th .inner-box {
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+    }
 </style>
+
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-		
-</script>
-<div class="caption">Student Details</div>
 
-  <div class="main-box">
-    <!-- Headers -->
-    <div class="box header">NAME</div>
-    <div class="box header">AGE</div>
-    <div class="box header">BRANCH</div>
+<table>
+    <caption>Student Details</caption>
 
-    <!-- Row 1 -->
-    <div class="box">Shaw</div>
-    <div class="box">20</div>
-    <div class="box">CSE</div>
+    <tr>
+        <th><div class="inner-box">NAME</div></th>
+        <th><div class="inner-box">AGE</div></th>
+        <th><div class="inner-box">BRANCH</div></th>
+    </tr>
 
-    <!-- Row 2 -->
-    <div class="box">Adil</div>
-    <div class="box">21</div>
-    <div class="box">ECE</div>
-  </div>
+    <tr>
+        <td><div class="inner-box">Shaw</div></td>
+        <td><div class="inner-box">20</div></td>
+        <td><div class="inner-box">CSE</div></td>
+    </tr>
+
+    <tr>
+        <td><div class="inner-box">Adil</div></td>
+        <td><div class="inner-box">21</div></td>
+        <td><div class="inner-box">ECE</div></td>
+    </tr>
+
+</
+</table>
 </body>
 
 </html>
